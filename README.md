@@ -10,7 +10,7 @@ AI-powered chatbot with domain-specific knowledge (in this case, about Resume) u
 
 # Auto-configurations
 ## AI Model
-By default, this project uses OpenAI's Spring Boot starter (spring-ai-openai-spring-boot-starter). However, you can easily switch to any other supported AI model. The pom.xml file prvidew few alternative AI model dependencies. (Note: Most models, except Ollama/Llama3.2, require an API key for access.) Configure your API key and other model properties in the application.properties file. The Chat Model API lists all supported modesl.
+By default, this project uses Ollama/phi3:mini Imp: you have to pull the model. However, you can easily switch to any other supported AI model. The pom.xml file prvidew few alternative AI model dependencies. (Note: Most models, except Ollama, require an API key for access.) Configure your API key and other model properties in the application.properties file. The Chat Model API lists all supported modesl.
 
 ## Vector Store
 The project is configured to use Chroma (spring-ai-chroma-store-spring-boot-starter) as a vector store, running locally: A docker-compose.yaml file is provided to start a local Chroma instance. The project is configured with Spring Boot Docker Compose integration for easy setup. (e.g. you don't have to start the docker-compose manually). Find more about Vector Stores
