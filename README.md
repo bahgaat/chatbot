@@ -1,29 +1,9 @@
-# Chatbot
+# Spring AI Chat Bot CLI
 
-A simple and extensible chatbot framework.
+AI-powered chatbot with domain-specific knowledge (in this case, about Resume) using Spring AI, Retrieval-Augmented Generation RAG and Conversational Memory.
 
-## Overview
-
-This project provides a foundation for building chatbots with customizable logic and integrations. It is designed for flexibility, allowing developers to plug in different NLP models, adapters, and backend services.
-
-## Features
-
-- Modular architecture for easy extension
-- Support for various messaging platforms
-- Simple configuration and setup
-- Example bots and adapters included
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (version 14 or higher recommended)
-- npm (comes with Node.js)
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/bahgaat/chatbot.git
-cd chatbot
+## Key Features
+1- RAG Implementation: The application uses a vector store to implement RAG, allowing the chatbot to retrieve relevant information from the loaded document.
+2- Conversation Memory: The MessageChatMemoryAdvisor enables the chatbot to remember previous interactions within the conversation.
+3- PDF Document Processing: The application can read and process PDF documents, making the information available to the chatbot.
+4- Interactive Console Interface: The application provides a simple console-based interface for interacting with the chatbot.
